@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danmark i Verden | Sikkerhed • EU • NATO • Global rolle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+        .fact-box {
+            background: white;
+            border-left: 8px solid #b91c1c;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div onclick="showPage('home')" class="flex items-center gap-3 cursor-pointer">
+                <div class="w-12 h-12 bg-red-600 rounded-2xl flex items-center justify-center text-4xl">🇩🇰</div>
+                <div>
+                    <h1 class="font-bold text-3xl text-red-700">Danmark i Verden</h1>
+                    <p class="text-xs text-gray-500">Dybdegående uddannelsessite</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-lg font-medium">
+                <a onclick="showPage('home')" class="hover:text-red-600 cursor-pointer">Forside</a>
+                <a onclick="showPage('trusler')" class="hover:text-red-600 cursor-pointer">Trusselsbillede</a>
+                <a onclick="showPage('eu')" class="hover:text-red-600 cursor-pointer">EU</a>
+                <a onclick="showPage('nato')" class="hover:text-red-600 cursor-pointer">NATO</a>
+                <a onclick="showPage('ukraine')" class="hover:text-red-600 cursor-pointer">Ukraine-støtte</a>
+                <a onclick="showPage('global')" class="hover:text-red-600 cursor-pointer">Global rolle</a>
+                <a onclick="showPage('quiz')" class="hover:text-red-600 cursor-pointer">Test din viden</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FORSIDE -->
+    <div id="home" class="content-section active">
+        <header class="hero-bg text-white py-52 text-center">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-6xl md:text-7xl font-bold mb-8 leading-tight">Danmark i en urolig verden</h2>
+                <p class="text-3xl max-w-4xl mx-auto">En omfattende og faktabaseret guide til Danmarks sikkerhedspolitik, internationale alliancer og globale ansvar i 2026.</p>
+            </div>
+        </header>
+
+        <div class="max-w-7xl mx-auto px-6 py-24 prose prose-xl mx-auto">
+            <p>Verden har gennemgået dramatiske forandringer siden Ruslands invasion af Ukraine i februar 2022. For første gang siden 2. Verdenskrig står Europa over for en reel konventionel militær trussel fra en stormagt. Dette har tvunget Danmark til at revurdere sin sikkerhedspolitik, øge forsvarsudgifterne markant og styrke samarbejdet i både EU og NATO.</p>
+            <p>Som et lille, højt udviklet og åbent land er Danmark særligt afhængig af et stabilt internationalt system. Vores sikkerhed, økonomiske velstand og frihed hviler i høj grad på stærke alliancer. Denne hjemmeside giver en grundig, neutral og dybdegående indføring i emnerne.</p>
+        </div>
+    </div>
+
+    <!-- TRUSSELSBILLEDE -->
+    <div id="trusler" class="content-section">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-5xl font-bold text-red-700 mb-8">Danmarks trusselsbillede 2025-2026</h2>
+            <p class="text-2xl text-gray-600 mb-12">Ifølge Forsvarets Efterretningstjeneste (FE), Politiets Efterretningstjeneste (PET) og Styrelsen for Samfundssikkerhed (SAMSIK) står Danmark over for det alvorligste trusselsbillede siden 2. Verdenskrig.</p>
+
+            <div class="prose prose-lg max-w-4xl mx-auto leading-relaxed">
+                <p>Rusland anses for at være den primære statstrussel mod Danmark. Den russiske invasion af Ukraine har vist, at Rusland er villig til at bruge militær magt for at opnå sine mål. Mod Danmark anvendes primært hybridmetoder: cyberangreb, spionage, sabotage mod kritisk infrastruktur (såsom undervandskabler), og desinformation.</p>
+                <p>Danmarks høje digitaliseringsgrad gør os til et attraktivt mål. Samtidig har vores aktive støtte til Ukraine øget risikoen for russiske modsvar.</p>
+
+                <h3 class="text-3xl font-semibold mt-12">Cybertrusler</h3>
+                <p>Truslen fra både statslige aktører og kriminelle er meget høj. Angreb kan ramme hospitaler, energiforsyning, banker og myndigheder med alvorlige konsekvenser for samfundet.</p>
+
+                <h3 class="text-3xl font-semibold mt-12">Terrorisme og ekstremisme</h3>
+                <p>PET vurderer terrortruslen som alvorlig, især fra militante islamister, men også fra højre- og venstreekstremister.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 mt-16">
+                    <div class="fact-box p-10 rounded-3xl shadow-xl">
+                        <h4 class="font-bold text-xl">Primær trussel</h4>
+                        <p class="text-3xl font-semibold text-red-700">Rusland</p>
+                    </div>
+                    <div class="fact-box p-10 rounded-3xl shadow-xl">
+                        <h4 class="font-bold text-xl">Cybertruslen</h4>
+                        <p class="text-3xl font-semibold text-red-700">Meget høj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EU -->
+    <div id="eu" class="content-section bg-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-10">Danmark i Den Europæiske Union</h2>
+            <div class="prose prose-xl max-w-4xl mx-auto leading-relaxed">
+                <p>Danmark blev medlem af EF (nu EU) den 1. januar 1973. Medlemskabet har haft enorm betydning for dansk økonomi, handel og velstand. EU er Danmarks vigtigste handelspartner med over 60% af al dansk eksport rettet mod andre EU-lande.</p>
+                <p>I 1992 stemte Danmark nej til Maastricht-traktaten, hvilket førte til fire forbehold. Den 1. juni 2022 afskaffede danskerne forsvarsforbeholdet med 66,9% af stemmerne. Dette har åbnet døren for fuld dansk deltagelse i EU’s sikkerheds- og forsvarssamarbejde (PESCO, militære missioner m.m.).</p>
+                <p>EU-samarbejdet giver Danmark adgang til det indre marked, fri bevægelighed, forskningsmidler, klimasamarbejde og fælles håndtering af hybride trusler.</p>
+
+                <div class="fact-box p-10 rounded-3xl shadow-xl mt-12">
+                    <h4 class="font-bold text-2xl">Eksport til EU-lande</h4>
+                    <p class="text-5xl font-bold text-blue-700 mt-4">Over 60%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NATO -->
+    <div id="nato" class="content-section bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-10">Danmark i NATO</h2>
+            <div class="prose prose-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                <p>Danmark var medstifter af NATO den 4. april 1949. Alliancen har siden da været hjørnestenen i dansk sikkerhedspolitik. NATO’s kerneprincip er kollektivt forsvar gennem Artikel 5: Et angreb på ét medlemsland betragtes som et angreb på alle.</p>
+                <p>Efter Ruslands invasion af Ukraine har Danmark øget sine forsvarsudgifter markant og arbejder målrettet mod at nå og overskride NATO’s mål på 2% af BNP. Danmark bidrager aktivt til NATO’s styrkede tilstedeværelse i Østersøregionen og Baltikum.</p>
+                <p>Danmark har desuden sendt militært udstyr, træning og humanitær hjælp til Ukraine i stort omfang.</p>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <div class="fact-box p-10 rounded-3xl shadow-2xl bg-white/10 text-white">
+                        <h4 class="font-bold">Artikel 5</h4>
+                        <p class="text-xl">"Et angreb på én er et angreb på alle"</p>
+                    </div>
+                    <div class="fact-box p-10 rounded-3xl shadow-2xl bg-white/10 text-white">
+                        <h4 class="font-bold">Medlem siden</h4>
+                        <p class="text-5xl font-bold">1949</p>
+                    </div>
+                    <div class="fact-box p-10 rounded-3xl shadow-2xl bg-white/10 text-white">
+                        <h4 class="font-bold">Forsvarsmål</h4>
+                        <p class="text-4xl font-bold">2% af BNP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UKRAINE-STØTTE -->
+    <div id="ukraine" class="content-section">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-5xl font-bold mb-8">Danmarks støtte til Ukraine</h2>
+            <p class="text-2xl mb-12">Siden Ruslands invasion i 2022 har Danmark ydet en af de største bidrag per indbygger i verden – både militært og civilt.</p>
+
+            <div class="overflow-x-auto mb-12">
+                <table class="w-full border-collapse bg-white shadow-2xl rounded-3xl overflow-hidden">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-6 text-left">Type støtte</th>
+                            <th class="p-6 text-center">2022</th>
+                            <th class="p-6 text-center">2023</th>
+                            <th class="p-6 text-center">2024</th>
+                            <th class="p-6 text-center">2025</th>
+                            <th class="p-6 text-center">2026</th>
+                            <th class="p-6 text-center font-bold">I ALT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b bg-red-50">
+                            <td class="p-6 font-semibold">Militær støtte</td>
+                            <td class="p-6 text-center">ca. 4,4 mia.</td>
+                            <td class="p-6 text-center">ca. 22,8 mia.</td>
+                            <td class="p-6 text-center">ca. 27,7 mia.</td>
+                            <td class="p-6 text-center">ca. 17,4 mia.</td>
+                            <td class="p-6 text-center">-</td>
+                            <td class="p-6 text-center text-red-600 font-bold">ca. 72,3 mia. kr.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-6 font-semibold">Civil støtte</td>
+                            <td class="p-6 text-center">ca. 1,4 mia.</td>
+                            <td class="p-6 text-center">ca. 1,6 mia.</td>
+                            <td class="p-6 text-center">ca. 2,5 mia.</td>
+                            <td class="p-6 text-center">ca. 1,7 mia.</td>
+                            <td class="p-6 text-center">ca. 0,7 mia.</td>
+                            <td class="p-6 text-center font-bold">ca. 7,8 mia. kr.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="fact-box p-10 rounded-3xl shadow-xl">
+                <p class="text-xl font-semibold">Danmark har vist internationalt lederskab ved konsekvent og massivt at støtte Ukraine – både med våben, træning og humanitær hjælp.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLOBAL ROLLE -->
+    <div id="global" class="content-section">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-5xl font-bold mb-10">Danmarks globale rolle</h2>
+            <div class="prose prose-xl max-w-4xl mx-auto leading-relaxed">
+                <p>Selvom Danmark er et lille land, spiller vi en aktiv og respekteret rolle på den internationale scene. Vi er kendt som en stærk stemme inden for klima, bæredygtighed, menneskerettigheder og Arktis-politik.</p>
+                <p>Klimaforandringerne gør Arktis mere tilgængeligt, hvilket skaber både nye økonomiske muligheder og sikkerhedspolitiske udfordringer. Danmark arbejder tæt sammen med Grønland og USA om sikkerheden i regionen.</p>
+                <p>Danmark er også en af de førende nationer inden for grøn teknologi, særligt havvind og energieffektivitet, og vi arbejder aktivt for ambitiøse globale klimaaftaler.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="fact-box p-10 rounded-3xl shadow-xl">
+                        <h4 class="font-bold">Arktis</h4>
+                        <p class="mt-4">Strategisk vigtigt område med stigende geopolitisk interesse.</p>
+                    </div>
+                    <div class="fact-box p-10 rounded-3xl shadow-xl">
+                        <h4 class="font-bold">Klima</h4>
+                        <p class="mt-4">Danmark er internationalt anerkendt som foregangsland.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" class="content-section bg-gradient-to-br from-red-700 to-red-900 text-white py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-6">Test din viden</h2>
+            <div id="quiz-container" class="space-y-16"></div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-center">
+        <p class="text-xl">Danmark i Verden © 2026</p>
+        <p class="text-sm mt-3">Neutralt uddannelsessite baseret på offentlige kilder</p>
+    </footer>
+
+    <script>
+        function showPage(page) {
+            document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(page).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const questions = [
+            { q: "Hvornår blev Danmark medlem af NATO?", a: "1949", options: ["1945","1949","1973","1992"], explanation: "Danmark var medstifter af NATO i 1949." },
+            { q: "Hvornår blev forsvarsforbeholdet afskaffet?", a: "2022", options: ["2019","2020","2022","2024"], explanation: "Ved folkeafstemningen 1. juni 2022." },
+            { q: "Hvad betyder Artikel 5 i NATO-traktaten?", a: "Et angreb på ét land er et angreb på alle", options: ["Fri handel","Kollektivt forsvar","Kun økonomisk støtte"], explanation: "Det er alliancens kerneprincip." }
+        ];
+
+        const container = document.getElementById('quiz-container');
+        questions.forEach((item, i) => {
+            let html = `<div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl">
+                <h3 class="text-2xl font-semibold mb-8">${i+1}. ${item.q}</h3>
+                <div class="grid gap-4" id="q${i}"></div>
+                <div id="f${i}" class="hidden mt-8 p-8 rounded-2xl"></div>
+            </div>`;
+            container.innerHTML += html;
+
+            item.options.forEach(opt => {
+                document.getElementById(`q${i}`).innerHTML += `
+                    <button onclick="answer(${i}, '${opt}', this)" class="w-full text-left p-5 rounded-2xl bg-white/20 hover:bg-white/30 transition">
+                        ${opt}
+                    </button>`;
+            });
+        });
+
+        function answer(index, selected, btn) {
+            const item = questions[index];
+            const feedback = document.getElementById(`f${index}`);
+            Array.from(btn.parentElement.children).forEach(b => b.disabled = true);
+
+            if (selected === item.a) {
+                feedback.innerHTML = `<span class="text-green-300 text-2xl">✓ Korrekt!</span><p class="mt-4">${item.explanation}</p>`;
+                feedback.classList.add('bg-green-900/40');
+            } else {
+                feedback.innerHTML = `<span class="text-red-300 text-2xl">✗ Forkert</span><p class="mt-4">Rigtigt svar: <strong>${item.a}</strong><br>${item.explanation}</p>`;
+                feedback.classList.add('bg-red-900/40');
+            }
+            feedback.classList.remove('hidden');
+        }
+
+        showPage('home');
+    </script>
+</body>
+</html>
